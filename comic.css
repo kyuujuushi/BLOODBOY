@@ -39,7 +39,10 @@
 	nav > a {
 		display: none;
 	}
-
+	/*	
+		yes ik hover is VERY BAD for touch screen but rn I wanna make sure the actual drop down function works.
+		after than I'll change it to be when it's clicked.
+	*/
 	nav > a:hover {
 		font-size: 14pt;
 		padding: 5px;
