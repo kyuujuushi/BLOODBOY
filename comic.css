@@ -42,12 +42,15 @@
 /* ALL OF THIS IS FOR THE DESKTOP VIEW OF IT. NOT MOBILE FRIENDLY WHAT SO EVER!*/
 
 body {
-	background-color: brown; /* that ain't brown I swear to god*/
+	background: linear-gradient(#9e1503,#461009);
 }
 
 img {
 	max-width: 480px;
+	padding-left: 400px;
+	padding-right: 50px;
 	height: auto;
+	min-block-size: 480px;
 }
 
 .flexbox{
@@ -55,16 +58,34 @@ img {
 	margin:0px;
 }
 
-.flexbox >.flexed {
-	background-color: pink;
-}
+
 
 nav{
-	padding: 10px;
-	min-width: 150px;
-	max-width: 150px;
+	border-radius: 10px;
+	background: linear-gradient(to bottom, rgba(172, 46, 46,1), rgba(172, 46, 46,0.3));
+	color: antiquewhite;
+	padding: 20px;
+	min-width: 300px;
+	max-width: 300px;
+	height: 889px;
+	position: fixed;
 }
 
 nav > a {
-	border: 2px;
+	font-size: 14pt;
+	padding: 5px;
+	margin-bottom: 5px;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 10px;
+	line-height: 40px;
+}
+
+h1 {
+	font-size: 30pt;
+	text-align: center;
+}
+
+p {
+	text-align: justify;
 }
