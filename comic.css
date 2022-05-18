@@ -1,11 +1,10 @@
-@media screen (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 	/* ALL OF THIS IS FOR THE DESKTOP VIEW OF IT. NOT MOBILE FRIENDLY WHAT SO EVER!*/
 	/* it also requires some polishing to mkae it nicer and responsive to window width changes but it's functional*/
 
 	/* makes the gradient background to look fancy*/
 	body {
 		background: linear-gradient(#61190f,#461009);
-		position: static;
 	}
 
 	/* the magic that makes the nav be on the side rather than uptop */
