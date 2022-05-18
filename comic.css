@@ -1,92 +1,69 @@
-/*
-	note to self:
+@media screen (min-width: 1281px) {
+	/* ALL OF THIS IS FOR THE DESKTOP VIEW OF IT. NOT MOBILE FRIENDLY WHAT SO EVER!*/
+	/* it also requires some polishing to mkae it nicer and responsive to window width changes but it's functional*/
 
-	fix: 
-		※ force the images be ONLY in a column and not spread out
-		   into a book-like manner when the browser window is 
-		   wider than like 720p
-		
-		※ Make the flexbox elements be flush with the edges of the
-		   browser window (if you see that red in the edges, 
-		   you're doing it wrong)
-		   
-		※ Make the nav sticky while the comic still scrolls
+	/* makes the gradient background to look fancy*/
+	body {
+		background: linear-gradient(#61190f,#461009);
+		position: static;
+	}
 
-	add/do:
-		※ Sans serif font instead of the default Times New Roman
+	/* the magic that makes the nav be on the side rather than uptop */
+	.flexbox{
+		display: flex;
+		margin:0px;
+	}
 
-		※ make the background where the comic is blank. Only the 
-		   nav element supposed to have a background color among 
-		   the flexbox elements
-		
-		※ fancy changing links (maybe make them buttons and
-		   make it flush with the nav element)
+	/* forces the images be in a column like in actual webcomic publishing sites*/
+	.viewbox {
+		width: 720px;
+		height: auto;
+		margin-left: 50%;
+	}
 
-		※ make the images have zero top and bottom margins (no gaps!)
-		   I want them look like it's all one image (this is to do the
-		   APNG magic)
+	/* makes the images be in a relativly readable but not super big. also makes them flush so that no one can tell if I put a shorter in height image (¬◡ ¬)*/
+	img {
+		max-width: 480px;
+		height: auto;
+		vertical-align: top;
+	}
+	/*
+		NOTES ON THE CONTENTS OF THE NAV! It appears that the contents of the nav may be skewed abit to the right for some dumb ass reason.
+		Will need to fix this later in the process
+	*/
+	/* makes the nav be lookin' fancy */
+	nav{
+		border-radius: 10px;
+		background: linear-gradient(to bottom, rgba(172, 46, 46,1), rgba(172, 46, 46,0.3));
+		color: antiquewhite;
+		padding: 20px;
+		min-width: 300px;
+		max-width: 300px;
+		height: 889px;
+		position: fixed;
+	}
 
-		※ Do the mobile version of the nav. Basically just have a
-		   bar over the comic (flush to the edges) with the title
-		   "BLOOD BOY" and in like one of the sides have a 三 which is
-		   a drop down. The about titbit is in a dropdown which can be 
-		   brought back up with another tap.
-		
-		※ make a proper palette (or be fucking insane and have the default be
-		   grey and depending on mood of the following images be that palette)
+	/* THIS IS A WIP! makes the links look like buttons. will make them the same width and animations when hovered later*/
+	nav > a {
+		font-size: 14pt;
+		padding: 5px;
+		margin-bottom: 5px;
+		border-style: solid;
+		border-width: 1px;
+		border-radius: 10px;
+		line-height: 40px;
+	}
 
-		   and a abstract brush background instead of a solid red
+	/* insert the link animations here~ o(≧▽≦)o .｡.:*☆ */
 
-*/
+	/* makes the header look abit more oomfed. will need to change the font into some bold san-serif font */
+	h1 {
+		font-size: 30pt;
+		text-align: center;
+	}
 
-/* ALL OF THIS IS FOR THE DESKTOP VIEW OF IT. NOT MOBILE FRIENDLY WHAT SO EVER!*/
-
-body {
-	background: linear-gradient(#9e1503,#461009);
-}
-
-.flexbox{
-	display: flex;
-	margin:0px;
-}
-
-.viewbox {
-	width: 720px;
-	height: auto;
-	margin-left: 75%;
-}
-
-img {
-	max-width: 480px;
-	height: auto;
-}
-
-nav{
-	border-radius: 10px;
-	background: linear-gradient(to bottom, rgba(172, 46, 46,1), rgba(172, 46, 46,0.3));
-	color: antiquewhite;
-	padding: 20px;
-	min-width: 300px;
-	max-width: 300px;
-	height: 889px;
-	position: fixed;
-}
-
-nav > a {
-	font-size: 14pt;
-	padding: 5px;
-	margin-bottom: 5px;
-	border-style: solid;
-	border-width: 1px;
-	border-radius: 10px;
-	line-height: 40px;
-}
-
-h1 {
-	font-size: 30pt;
-	text-align: center;
-}
-
-p {
-	text-align: justify;
+	/* makes the p text element justifed. makes it look more uniform */
+	p {
+		text-align: justify;
+	}	
 }
