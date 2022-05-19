@@ -3,70 +3,76 @@
 	padding: 0;
 }
 /* mobile version*/
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
 	/* makes the gradient background to look fancy*/
 	body {
 		background: linear-gradient(#61190f,#461009);
 	}
 
-	.flexbox {
-		vertical-align: top;
-	}
-
-	/* makes the images be in a relativly readable but not super big. also makes them flush so that no one can tell if I put a shorter in height image (¬◡ ¬)*/
-	img {
-		max-width: 700px;
-		height: auto;
-		margin-left: auto;
-		margin-right: auto;
-		vertical-align: top;
-	}
-	/*
-		NOTES ON THE CONTENTS OF THE NAV! It appears that the contents of the nav may be skewed abit to the right for some dumb ass reason.
-		Will need to fix this later in the process
-	*/
-	/* makes the nav be lookin' fancy */
-	nav{
-		margin-top: 0px;
-		background: linear-gradient(to bottom, rgba(172, 46, 46,1), rgb(110, 8, 34));
-		color: #faebd7;
-		padding: 10px;
-		height: auto;
-		position: fixed;
-	}
-
-	/* THIS IS A WIP! makes the links look like buttons. will make them the same width and animations when hovered later*/
-	nav > a {
+	nav.flexed {
 		display: none;
 	}
-	/*	
-		yes ik hover is VERY BAD for touch screen but rn I wanna make sure the actual drop down function works.
-		after than I'll change it to be when it's clicked.
-	*/
-	nav > a:hover {
-		font-size: 14pt;
-		padding: 5px;
-		margin-bottom: 5px;
-		border-style: solid;
-		border-width: 1px;
-		border-radius: 10px;
-		line-height: 40px;
-	}
-	/* insert the link animations here~ o(≧▽≦)o .｡.:*☆ */
 
+	div.flexed {
+		display: flex;
+	}
+
+	/* makes the nav be lookin' fancy */
+	.topnav{
+		vertical-align: top;
+		margin-top: 0px;
+		background: linear-gradient(to bottom, rgba(172, 46, 46,1), rgba(110, 8, 34, 0.7));
+		color: #faebd7;
+		padding: 10px;
+		width: 100%;
+		overflow: hidden;
+		position: relative;
+	}
+
+	.mobile #myLinks {
+		display: none;
+	}
+
+	.topnav a{
+  		padding: 14px 16px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+	}
+
+	.topnav a.icon {
+		left: 0;
+		top: 0;
+	}
+
+	.topnav a:hover {
+		background-color: #ddd;
+	}
+	
 	/* makes the header look abit more oomfed. will need to change the font into some bold san-serif font */
 	h1 {
 		font-size: 30pt;
 		text-align: center;
+		padding-left: auto;
+		padding-right: auto;
 	}
 
 	/* makes the p text element justifed. makes it look more uniform */
 	p {
 		text-align: justify;
-	}	
+	}
+	
+	/* makes the images be in a relativly readable but not super big. also makes them flush so that no one can tell if I put a shorter in height image (¬◡ ¬)*/
+	img {
+		max-width: 630px;
+		height: auto;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
 }
 /* desktop and high-res tablets */
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 851px) {
 	/* ALL OF THIS IS FOR THE DESKTOP VIEW OF IT. NOT MOBILE FRIENDLY WHAT SO EVER!*/
 	/* it also requires some polishing to mkae it nicer and responsive to window width changes but it's functional*/
 
@@ -81,28 +87,16 @@
 		margin:0px;
 	}
 
-	/* forces the images be in a column like in actual webcomic publishing sites*/
-	.viewbox {
-		width: 720px;
-		height: auto;
-		margin-left: 50%;
-	}
-
-	/* makes the images be in a relativly readable but not super big. also makes them flush so that no one can tell if I put a shorter in height image (¬◡ ¬)*/
-	img {
-		max-width: 480px;
-		height: auto;
-		vertical-align: top;
-	}
 	/*
 		NOTES ON THE CONTENTS OF THE NAV! It appears that the contents of the nav may be skewed abit to the right for some dumb ass reason.
 		Will need to fix this later in the process
 	*/
 	/* makes the nav be lookin' fancy */
+	.button{
+		display: none;
+	}
+
 	nav{
-		margin-top: 10px;
-		margin-left: 10px;
-		border-radius: 10px;
 		background: linear-gradient(to bottom, rgba(172, 46, 46,1), rgba(172, 46, 46,0.3));
 		color: antiquewhite;
 		padding: 20px;
@@ -135,4 +129,18 @@
 	p {
 		text-align: justify;
 	}	
+
+	/* forces the images be in a column like in actual webcomic publishing sites*/
+	.viewbox {
+		width: 720px;
+		height: auto;
+		margin-left: 40%;
+	}
+
+	/* makes the images be in a relativly readable but not super big. also makes them flush so that no one can tell if I put a shorter in height image (¬◡ ¬)*/
+	img {
+		max-width: 480px;
+		height: auto;
+		vertical-align: top;
+	}
 }

@@ -4,14 +4,55 @@
 		<meta charset="utf-8">
 		<title>COMIC TEST!</title>
 		<link rel="stylesheet" href="comic.css">
+		<script>
+			var hiddenItems = document.getElementById("myLinks");
+			hiddenItems.style.display = "none";
+			function dropit() {
+  				var x = document.getElementById("myLinks");
+  				if (x.style.display === "block") {
+    				x.style.display = "none";
+  				}
+  	 			else {
+    				x.style.display = "block";
+  				}
+			}
+		</script>
 	</head>
 	<body>
 		<div class="flexbox">
-			<nav class="flexed">
-				<h1>BLOOD BOY</h1>
-				<div class="dropdown">
+			<!-- Mobile version of the nav -->
+			
+			<nav class="topnav">
+				<div class="flexed">
+				<a href="javascript:void(0)" class="icon" onclick="dropit()">
+					<img src="icons8-menu-32.png" alt="">
+				</a>
+				<h1 class="active">BLOOD BOY</h1> 
+				</div>
+				<div id="myLinks">
 					<p id="about">About</p>
-					<div class="dropdown">
+						<p>
+							A webcomic series about teens, an alien eldrich god 
+							and general coorprate fuckery. This story is devided in multiple 
+							short stories that may vary in length however there is a designated
+							timeline to this.
+						</p>
+						<p id="timeline">TIMELINE ID: ALPHA-0</p>
+					<br>
+					<a href="./../index.html">Home</a>
+					<br>
+					<a href="https://kyuujuushi.github.io/">Author's site</a>
+					<br>
+					<a href="#">kofi maybe?</a>
+					<br>
+					<a href="#">dummy link for short story</a>
+				</div>
+			</nav>
+			<!-- Desktop version of the site's nav-->
+			<nav class="flexed">
+				<h1>BLOOD BOY</h1> 
+				<div>
+					<p id="about">About</p>
 						<p>
 							A webcomic series about teens, an alien eldrich god 
 							and general coorprate fuckery. This story is devided in multiple 
@@ -21,13 +62,13 @@
 						<p id="timeline">TIMELINE ID: ALPHA-0</p>
 					</div>
 					<br>
-					<a href="./../index.html" class="button">Home</a>
+					<a href="./../index.html">Home</a>
 					<br>
-					<a href="https://kyuujuushi.github.io/" class="button">Author's site</a>
+					<a href="https://kyuujuushi.github.io/">Author's site</a>
 					<br>
-					<a>kofi maybe?</a>
+					<a href="#">kofi maybe?</a>
 					<br>
-					<a>dummy link for short story</a>
+					<a href="#">dummy link for short story</a>
 				</div>
 			</nav>
 			<main class="flexed">
