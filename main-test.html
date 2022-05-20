@@ -4,7 +4,10 @@
 		<meta charset="utf-8">
 		<title>COMIC TEST!</title>
 		<link rel="stylesheet" href="comic.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script>
+			// this code is much more elegant but like it makes it that the default is that it's seen
+			// while what I want is the hidden to BE the default
 			var hiddenItems = document.getElementById("myLinks");
 			hiddenItems.style.display = "none";
 			function dropit() {
@@ -25,7 +28,7 @@
 			<nav class="topnav">
 				<div class="flexed">
 				<a href="javascript:void(0)" class="icon" onclick="dropit()">
-					<img src="icons8-menu-32.png" alt="">
+					<i class="fa fa-bars"></i>
 				</a>
 				<h1 class="active">BLOOD BOY</h1> 
 				</div>
