@@ -2,8 +2,8 @@
 	margin: 0;
 	padding: 0;
 }
-/* mobile version*/
-@media screen and (max-width: 850px) {
+/* mobile version. yes that's a very bizzare aspect ratio but if it's like 3/4 the comic will clip behind the nav*/
+@media (max-aspect-ratio: 5/5) {
 	/* makes the gradient background to look fancy*/
 	body {
 		background: linear-gradient(#61190f,#461009);
@@ -15,6 +15,10 @@
 
 	div.flexed {
 		display: flex;
+	}
+
+	.viewbox {
+		padding-top: 67px;
 	}
 
 	/* makes the nav be lookin' fancy */
@@ -43,6 +47,7 @@
 	.topnav a.icon {
 		left: 0;
 		top: 0;
+		display: block;
 	}
 
 	.topnav a:hover {
@@ -72,7 +77,7 @@
 	}
 }
 /* desktop and high-res tablets */
-@media screen and (min-width: 851px) {
+@media (min-aspect-ratio: 5/5) {
 	/* ALL OF THIS IS FOR THE DESKTOP VIEW OF IT. NOT MOBILE FRIENDLY WHAT SO EVER!*/
 	/* it also requires some polishing to mkae it nicer and responsive to window width changes but it's functional*/
 
