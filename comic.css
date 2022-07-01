@@ -15,10 +15,11 @@
 
 	div.flexed {
 		display: flex;
+		text-align: center;
 	}
 
 	.viewbox {
-		padding-top: 67px;
+		padding-top: 0px;
 	}
 
 	/* makes the nav be lookin' fancy */
@@ -30,7 +31,9 @@
 		padding: 10px;
 		width: 100%;
 		overflow: hidden;
-		position: fixed;
+		position: -webkit-sticky;
+		position: sticky;
+		top: 0px;
 	}
 
 	/* The Overlay (background) */
@@ -51,33 +54,49 @@
 	/* Position the content inside the overlay */
 	.overlay-content {
 		position: relative;
-		top: 25%; /* 25% from the top */
+		top: 5%; /* 25% from the top */
 		width: 100%; /* 100% width */
-		text-align: center; /* Centered text/links */
-		margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+		text-align: left; /* Centered text/links */ 
+		margin-top: 30px;/* 30px top margin to avoid conflict with the close button on smaller screens */
 	}
   
 	/* The navigation links inside the overlay */
 	.overlay a {
-		padding: 8px;
 		text-decoration: none;
+		top: 25%;
 		font-size: 36px;
 		color: #818181;
 		display: block; /* Display block instead of inline */
 		transition: 0.3s; /* Transition effects on hover (color) */
 	}
-  
+
+	.overlay p {
+		text-decoration: none;
+		text-align: justify;
+		top: 25%;
+		font-size: 36px;
+		color: #818181;
+		display: block; /* Display block instead of inline */
+		transition: 0.3s; /* Transition effects on hover (color) */
+	}
+	
+	#about {
+		color: white;
+	}
+
 	/* When you mouse over the navigation links, change their color */
 	.overlay a:hover, .overlay a:focus {
 		color: #f1f1f1;
 	}
-  
+
 	/* Position the close button (top right corner) */
   	.overlay .closebtn {
-		position: absolute;
-		top: 20px;
+		position: static;
+		top: 0px;
 		right: 45px;
+		margin-bottom: 25px;
 		font-size: 60px;
+		text-align: right;
 	}
 
 	.icon{
@@ -89,10 +108,13 @@
 		font-size: 60pt;
 		display: block;
 		text-align: center;
-		padding-left: auto;
-		padding-right: auto;
 	}
-
+	
+	span{
+		font-size: 20pt;
+		display: left;
+		text-align: auto;
+	}
 	
 	/* makes the images be in a relativly readable but not super big. also makes them flush so that no one can tell if I put a shorter in height image (¬◡ ¬)*/
 	img {
@@ -102,32 +124,40 @@
 		margin-right: auto;
 		display: block;
 	}
+
 }
 /* desktop and high-res tablets */
 @media (min-aspect-ratio: 1/1) {
 	/* ALL OF THIS IS FOR THE DESKTOP VIEW OF IT. NOT MOBILE FRIENDLY WHAT SO EVER!*/
 	/* it also requires some polishing to mkae it nicer and responsive to window width changes but it's functional*/
 
+
+	/* THIS AREA HIDES THE MOBILE VERSIONS OF THE NAV BAR */
+	.topnav {
+		display: none;
+	}
+	
+	/* makes the nav be lookin' fancy */
+	.button{
+		display: none;
+	}
+	
+	.overlay-content{
+		display: none;
+	}
+
+	/* BEGINNING OF DESKTOP STYLING */
+
 	/* makes the gradient background to look fancy*/
 	body {
 		background: linear-gradient(#61190f,#461009);
 	}
+	
 
 	/* the magic that makes the nav be on the side rather than uptop */
 	.flexbox{
 		display: flex;
 		margin:0px;
-	}
-	.topnav {
-		display: none;
-	}
-	/*
-		NOTES ON THE CONTENTS OF THE NAV! It appears that the contents of the nav may be skewed abit to the right for some dumb ass reason.
-		Will need to fix this later in the process
-	*/
-	/* makes the nav be lookin' fancy */
-	.button{
-		display: none;
 	}
 
 	nav{
