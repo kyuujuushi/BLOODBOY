@@ -139,7 +139,7 @@
 	
 	/* makes the nav be lookin' fancy */
 	.button{
-		display: none;
+		display: none;	
 	}
 	
 	.overlay-content{
@@ -168,6 +168,7 @@
 		max-width: 300px;
 		height: 100%;
 		position: fixed;
+		text-align: center;
 	}
 
 	/* THIS IS A WIP! makes the links look like buttons. will make them the same width and animations when hovered later*/
@@ -175,9 +176,8 @@
 		font-size: 14pt;
 		padding: 5px;
 		margin-bottom: 5px;
-		border-style: solid;
-		border-width: 1px;
-		border-radius: 10px;
+		border-style: none;
+		background-color: pink;
 		line-height: 40px;
 	}
 
