@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="comic.css">
+    <script>
+        function openNav() {
+          document.getElementById("myNav").style.width = "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</head>
+<body>
+    <!-- Mobile version of the nav -->
+		<div class="flexbox">
+			<nav class="topnav">
+				<div class="flexed">
+				<span style="cursor:pointer" onclick="openNav()">&#9776;</span>
+				<h1 class="active">BLOOD BOY</h1> 
+				</div>
+			</nav>
+			<!-- the overlay -->
+			<div id="myNav" class="overlay">
+				<div class="overlay-content">
+					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+					<br/>
+					<p id="timeline">TIMELINE ID: ALPHA-0</p>
+					<br>
+					<br>
+					<a href="./../index.html">Home</a>
+					<br>
+					<a href="https://kyuujuushi.github.io/">Author's site</a>
+					<br>
+					<a href="#">kofi maybe?</a>
+					<br>
+					<a href="#">dummy link for short story</a>
+				</div>
+			</div>
+			<!-- Desktop version of the site's nav-->
+			<nav class="flexed">
+				<h1>BLOOD BOY</h1> 
+				<div>
+					<p id="timeline">TIMELINE ID: ALPHA-0</p>
+					</div>
+					<br>
+					<button onclick="location.href = './../index.html'">Home</button>
+					<br>
+					<button onclick="location.href = 'https://kyuujuushi.github.io/'">Author's site</button>
+					<br>
+					<button>kofi maybe?</button>
+					<br>
+					<button>dummy link for short story</button>
+				</div>
+			</nav>
+			<main class="flexed">
+				<div class="viewbox" id="textbox">
+					<h1>About</h1>
+                    <p>Hello! This website is made to host a webcomic called "BLOOD BOY".</p>
+                    <p>
+                        BLOOD BOY is a horror webcomic split up into many short stories to tell the plot across different points of time, perspectives and timelines 
+                        <i>ye you read that right, timelines</i>. Now, why would it be in multiple timelines? Because 1) there is an alien race that fucks around with
+                        timelines and 2) bc I was writing one version of this story and the new version wouldn't make too much sense so I thought LETS RECYCLE THE OLD DRAFT!
+                    </p>
+                    <p>
+                        Now, don't worry about the timeline mess I'll make a webpage that has the whole diagram of the chaos the timeline tree is later but there is one thing you 
+                        <strong>DO</strong> need to know about the timelines and how they work:
+                    </p>
+                    <ol>
+                        <li>
+                            The timelines are grouped into three main groups:
+                            <ul>
+                                <li>Group ALPHA</li>
+                                <li>Group BETA</li>
+                                <li>Group GAMMA</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Group ALPHA is the group of timelines that sets up the playing field of the story. The backstory if you will. 
+                            Things like "Why is Zaccharie in a roadtrip with a random not-actually-hackers?", "How the hell did Jason get his blood powers to become 'The Blood Boy'?"
+                            stuff like that.
+                        </li>
+                        <li>
+                            Group BETA is the group of timelines where Zaccharie didn't go to the roadtrip with the not-actually-hackers and instead had a normal life until Jason somehow
+                            comes back to Boston and THEN Zaccharie gets involved with The GHOSTs. This group's focus is only that Zaccharie is the person that yeets Lilith from reality itself,
+                            dies bc he basically made a "black hole" <i>no it isn't a black hole but there isn't air in the void anyways so it does suck like a black hole</i> which is the
+                            reason why group GAMMA exists in the first place.
+                        </li>
+                        <li>
+                            Group GAMMA is the group of timelines where at least one of them ends in a happy ending and our main characters just die of the good ol' old age (except Jason, 
+                            he dies from the sun being too old and starts fucking expanding) and it all starts with Zaccharie being all "Imma save my childhood friend from an evil biotech company!
+                            It's not <i>thaaat</i> bad to do that right? Right? No one gonna die right?"
+                        </li>
+                    </ol>
+				</div>
+			</main>
+		</div>
+</body>
+</html>
