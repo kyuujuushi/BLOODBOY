@@ -57,6 +57,7 @@
 		width: 100%; /* 100% width */
 		text-align: left; /* Centered text/links */ 
 		margin-top: 30px;/* 30px top margin to avoid conflict with the close button on smaller screens */
+		font-family: system-ui, -apple-system, sans-serif;
 	}
   
 	/* The navigation links inside the overlay */
@@ -102,10 +103,11 @@
 	h1 {
 		font-size: 50pt;
 		display: right;
+		font-family: system-ui, -apple-system, sans-serif;
 	}
 	
 	span{
-		font-size: 40pt;
+		font-size: 50pt;
 		display: left;
 		text-align: center;
 	}
@@ -166,13 +168,25 @@
 	}
 
 	/* THIS IS A WIP! makes the links look like buttons. will make them the same width and animations when hovered later*/
-	nav > a {
+	button {
 		font-size: 14pt;
 		padding: 5px;
 		margin-bottom: 5px;
 		border-style: none;
-		background-color: pink;
 		line-height: 40px;
+		transition: 0.3s;
+		text-decoration: none;
+		color: #d499a1;
+		background-color: rgba(172, 46, 46,1);
+		width: 100%;
+		letter-spacing: normal;
+	}
+
+	button:hover, button:focus {
+		background-color: rgb(77, 12, 12);
+		color: white;
+		letter-spacing: 5px;
+		transition: 0.3s;
 	}
 
 	/* insert the link animations here~ o(≧▽≦)o .｡.:*☆ */
@@ -181,11 +195,13 @@
 	h1 {
 		font-size: 30pt;
 		text-align: center;
+		font-family: system-ui, -apple-system, sans-serif;
 	}
 
 	/* makes the p text element justifed. makes it look more uniform */
 	p {
 		text-align: justify;
+		font-family: system-ui, -apple-system, sans-serif;
 	}	
 
 	/* forces the images be in a column like in actual webcomic publishing sites*/
