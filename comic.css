@@ -19,7 +19,7 @@
 	}
 
 	.viewbox {
-		padding-top: 0px;
+		margin-top: 15%;
 	}
 
 	/* makes the nav be lookin' fancy */
@@ -30,9 +30,7 @@
 		color: #faebd7;
 		padding: 10px;
 		width: 100%;
-		overflow: hidden;
-		position: -webkit-sticky;
-		position: sticky;
+		position: fixed;
 		top: 0px;
 	}
 
