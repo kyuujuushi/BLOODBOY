@@ -68,6 +68,7 @@
 		color: #d499a1;
 		display: block; /* Display block instead of inline */
 		transition: 0.3s; /* Transition effects on hover (color) */
+		letter-spacing: normal;
 	}
 
 	.overlay p {
@@ -84,6 +85,8 @@
 	/* When you mouse over the navigation links, change their color */
 	.overlay a:hover, .overlay a:focus {
 		color: #f1f1f1;
+		letter-spacing: 5px;
+		transition: 0.3s;
 	}
 
 	/* Position the close button (top right corner) */
